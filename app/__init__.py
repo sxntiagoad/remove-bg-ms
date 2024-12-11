@@ -9,4 +9,11 @@ def create_app():
     from app.routes.bg_remove_routes import bgRemove_bp
     app.register_blueprint(bgRemove_bp)
 
+    @app.route('/')
+    def home():
+        return "¡Bienvenido al Servicio de Remover Fondos!"
+
     return app
+
+# Crear la instancia de la aplicación
+app = create_app()
