@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from services.bg_remove import remove_background
+from app.services.bg_remove import remove_background
 
 bgRemove_bp = Blueprint('bgRemove', __name__)
 
